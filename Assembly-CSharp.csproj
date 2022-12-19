@@ -47,10 +47,11 @@
      <Compile Include="Assets\Scripts\Field of view\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
+     <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\NaviControl.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />
      <Compile Include="Assets\Scripts\GunController.cs" />
      <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\MouseNavi.cs" />
-     <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\NaviControl.cs" />
+     <Compile Include="Assets\Scripts\CubeMover.cs" />
      <None Include="Assets\NULLcode Studio\MouseNavi\NULLcode Studio.txt" />
      <None Include="Assets\Shaders\Stencil Object.shader" />
      <None Include="Assets\Shaders\Stencil Mask.shader" />
