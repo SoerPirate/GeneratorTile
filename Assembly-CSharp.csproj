@@ -45,8 +45,12 @@
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\MapGenerator.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
-     <Compile Include="Assets\Scripts\GunController.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />
+     <Compile Include="Assets\Scripts\GunController.cs" />
+     <Compile Include="Assets\Scripts\Field of view\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\Field of view\Controller.cs" />
+     <None Include="Assets\Shaders\Stencil Object.shader" />
+     <None Include="Assets\Shaders\Stencil Mask.shader" />
     <Reference Include="UnityEngine">
         <HintPath>F:/Program Files (x86)/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
