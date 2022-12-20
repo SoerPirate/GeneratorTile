@@ -182,6 +182,7 @@ public class MapGenerator : MonoBehaviour {
 		public int seed;
 		public float minObstacleHeight;
 		public float maxObstacleHeight;
+		public string description;
 		public Color foregroundColour;
 		public Color backgroundColour;
 		
