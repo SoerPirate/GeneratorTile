@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\LivingEntity.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\FollowTarget.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
@@ -50,10 +51,10 @@
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\NaviControl.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />
+     <Compile Include="Assets\Scripts\PlayerTapMove.cs" />
      <Compile Include="Assets\Scripts\GunController.cs" />
      <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\MouseNavi.cs" />
-     <Compile Include="Assets\Scripts\FollowTarget.cs" />
-     <Compile Include="Assets\Scripts\PlayerTapMove.cs" />
+     <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <None Include="Assets\NULLcode Studio\MouseNavi\NULLcode Studio.txt" />
      <None Include="Assets\Shaders\Stencil Object.shader" />
      <None Include="Assets\Shaders\Stencil Mask.shader" />
