@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+//using Photon;
+//using Photon.Pun;
 
 public class FieldOfView : MonoBehaviour {
 
-	public float viewRadius;
+	public float viewRadius = 17;
 	[Range(0,360)]
-	public float viewAngle;
+	public float viewAngle = 120;
 
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
@@ -14,33 +16,56 @@ public class FieldOfView : MonoBehaviour {
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
 
-	public float meshResolution;
-	public int edgeResolveIterations;
-	public float edgeDstThreshold;
-
-	public float maskCutawayDst = .1f;
+	public float meshResolution = 3;
+	public int edgeResolveIterations = 4;
+	public float edgeDstThreshold = 0.5f;
+	public float maskCutawayDst = 0.15f;
 
 	public MeshFilter viewMeshFilter;
 	Mesh viewMesh;
+	//PhotonView photonView;
 
-	void Start() {
+	void Start() 
+	{
+		//targetMask.value = 9;
+		//obstacleMask.value = 8; 
+
+		//targetMask.GetMask("Targets");
+		//obstacleMask.GetMask("Obstacles");
+
+		targetMask = LayerMask.GetMask("Targets");
+		obstacleMask = LayerMask.GetMask("Obstacles");
+
+		var VV = transform.Find("View Visualisation");
+		viewMeshFilter = VV.GetComponent<MeshFilter>();
+
 		viewMesh = new Mesh ();
 		viewMesh.name = "View Mesh";
 		viewMeshFilter.mesh = viewMesh;
 
+		//photonView = gameObject.GetComponent<PhotonView>();
+		//if (photonView.IsMine)
+		//{
 		StartCoroutine ("FindTargetsWithDelay", .2f);
+		//}
 	}
 
 
-	IEnumerator FindTargetsWithDelay(float delay) {
+	IEnumerator FindTargetsWithDelay(float delay) 
+	{
 		while (true) {
 			yield return new WaitForSeconds (delay);
 			FindVisibleTargets ();
 		}
 	}
 
-	void LateUpdate() {
+	void LateUpdate() 
+	{
+		//if (photonView.IsMine)
+		//{
 		DrawFieldOfView ();
+		//}
+		
 	}
 
 	void FindVisibleTargets() {
