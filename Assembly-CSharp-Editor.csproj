@@ -36,10 +36,53 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\LogViewer\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
      <Compile Include="Assets\Editor\MapEditor.cs" />
      <Compile Include="Assets\Editor\FieldOfViewEditor.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
-     <Compile Include="Assets\LogViewer\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Utility\BaseEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineClearShotEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineTrackedDollyEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Utility\SerializedPropertyHelper.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\PropertyDrawers\LensSettingsPropertyDrawer.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\PropertyDrawers\MinDrawer.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineTransposerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineStateDrivenCameraEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineColliderEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineHardLookAtEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Utility\EmbeddedAssetHelpers.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Utility\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineExternalCameraEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineTargetGroupEditor.cs" />
+     <Compile Include="Assets\Cinemachine\PostFX\Editor\CinemachinePostProcessingEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineFramingTransposerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Windows\CinemachineColliderPrefs.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineFreeLookEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineBlendListCameraEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineScreenComposerGuides.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Utility\SaveDuringPlay.cs" />
+     <Compile Include="Assets\Cinemachine\PostFX\Editor\PostFXAutoImport.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Windows\AboutWindow.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\PropertyDrawers\GetSetDrawer.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\PropertyDrawers\CinemachineBlendDefinitionPropertyDrawer.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineBlenderSettingsEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Windows\CinemachineSettings.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineVirtualCameraBaseEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineSmoothPathEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Menus\CinemachineMenu.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineVirtualCameraEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Timeline\Editor\CinemachineShotEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineHardLockToTargetEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineBrainEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineGroupComposerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\PropertyDrawers\CinemachineTagFieldPropertyDrawer.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineComposerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineMixingCameraEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineConfinerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachinePathEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachineOrbitalTransposerEditor.cs" />
+     <Compile Include="Assets\Cinemachine\Base\Editor\Editors\CinemachinePOVEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>F:/Program Files (x86)/Unity/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -274,17 +317,17 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>F:/Разное/Разработка/GeneratorTile/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+        <HintPath>F:/Разное/Разработка/GeneratorTile/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/PackageCache/com.unity.collab-proxy@1.9.0/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-        <HintPath>F:/Разное/Разработка/GeneratorTile/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-        <HintPath>F:/Разное/Разработка/GeneratorTile/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -664,14 +707,14 @@
     <Reference Include="UnityEditor.UI">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>F:/Разное/Разработка/GeneratorTile/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>F:/Разное/Разработка/GeneratorTile/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>F:/Разное/Разработка/GeneratorTile/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -683,33 +726,21 @@
       <Project>{89c13126-8020-5d88-c95b-af0ec7fddbac}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{4ba1b188-8f76-687c-f500-d300da8d60bc}</Project>
-      <Name>PunDemos.DemoSlotcarEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{f9848e84-337f-d61e-893d-1d2791c087e0}</Project>
-      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{667675f9-f9f4-ee23-fce0-78a11afbcff7}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{3afc0228-c85e-a6e4-2cbf-fdbaef290a2b}</Project>
+      <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
       <Project>{f5d01a24-4f5f-238f-1aa6-7bd4b7456ae7}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{3afc0228-c85e-a6e4-2cbf-fdbaef290a2b}</Project>
-      <Name>PhotonChat</Name>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{fe440311-f2cb-8667-3607-d75e2fc51df2}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{b898f51b-01b2-b83d-8d84-f8f55bd7d2c9}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{fe440311-f2cb-8667-3607-d75e2fc51df2}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
       <Project>{1356d6d1-fc8d-a69b-c3c9-8e9ad0634391}</Project>
@@ -718,6 +749,18 @@
     <ProjectReference Include="PhotonRealtime.csproj">
       <Project>{1570e54f-4da9-c7cd-2f75-131215c35e34}</Project>
       <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{667675f9-f9f4-ee23-fce0-78a11afbcff7}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{4ba1b188-8f76-687c-f500-d300da8d60bc}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{f9848e84-337f-d61e-893d-1d2791c087e0}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
