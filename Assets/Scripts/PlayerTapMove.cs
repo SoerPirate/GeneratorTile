@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using Photon;
 using Photon.Pun;
+//using Cinemachine;
 
 public class PlayerTapMove : MonoBehaviour
 {
-    private Camera mainCamera;
+    public Camera mainCamera;
     private NavMeshAgent agent;
     PhotonView photonView;
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class PlayerTapMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (photonView.IsMine)
         {

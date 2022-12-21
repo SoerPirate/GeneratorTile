@@ -2,7 +2,7 @@
 using System.Collections;
 using Photon;
 using Photon.Pun;
-
+//using FollowTargetSystem;
 public class Controller : MonoBehaviour {
 
 	public float moveSpeed = 6;
@@ -16,7 +16,18 @@ public class Controller : MonoBehaviour {
 		//rigidbody = GetComponent<Rigidbody> ();
 		//PhotonView photonView;
 		photonView = gameObject.GetComponent<PhotonView>();
+		//viewCamera = Camera.main;
+
+		// if (viewCamera.isLocal)
+		// {
+			
+		// 	viewCamera = Camera.main;
+		// 	viewCamera.GetComponent<FollowTarget>().target = gameObject.transform;
+		// }
+
 		viewCamera = Camera.main;
+		viewCamera.GetComponent<FollowTarget>().target = gameObject.transform;
+		 
 	}
 
 	void Update () 

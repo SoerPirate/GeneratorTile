@@ -47,6 +47,8 @@ namespace Photon.Pun.Demo.PunBasics
         public GameObject player1SpawnPosition;
         public GameObject player2SpawnPosition;
 
+        //public CinemachineVirtualCamera cinemachineCamera;
+
         //public GameObject ballSpawnTransform;
 
         private GameObject ball;
@@ -73,8 +75,25 @@ namespace Photon.Pun.Demo.PunBasics
             player1.AddComponent<FieldOfView>();          
             player1.AddComponent<Controller>();   
 
-                    //cinemachineCamera.Follow = player1.transform;
-                    //cinemachineCamera.LookAt = player1.transform;
+            // GameObject vcgo = new GameObject();
+
+            // vcgo.transform.position = new Vector3(0, 25, 0);
+            // vcgo.transform.Rotate(90.0f, 0.0f, 0.0f);
+
+            // cinemachineCamera = vcgo.AddComponent<CinemachineVirtualCamera>();
+
+            // cinemachineCamera.Follow = player1.transform;
+            // cinemachineCamera.LookAt = player1.transform;
+            // cinemachineCamera.m_Lens.OrthographicSize = 20;
+            // cinemachineCamera.m_Lens.NearClipPlane = 0;
+            // cinemachineCamera.m_Lens.FarClipPlane = 30;
+
+
+
+
+
+            //var pltmove = player1.GetComponent<PlayerTapMove>(); 
+            //pltmove.mainCamera = cinemachineCamera; 
 
                     // 4
                     //ball = PhotonNetwork.Instantiate("Ball", ballSpawnTransform.transform.position, ballSpawnTransform.transform.rotation, 0);
