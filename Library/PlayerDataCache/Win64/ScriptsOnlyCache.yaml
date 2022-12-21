@@ -1,16 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Controller
-    - CubeMover
     - EnemyAI
-    - FieldOfView
     - MapGenerator
     - MouseNavi
-    - NaviControl
     - Photon.Pun.Demo.PunBasics.GameManager
     - Photon.Pun.Demo.PunBasics.Launcher
-    - PlayerTapMove
     - Reporter
     - ReporterMessageReceiver
     - UnityStandardAssets.Utility.FollowTarget
@@ -85,25 +80,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1528}
-    - Class: 114
-      Script: {instanceID: 1558}
-    - Class: 114
       Script: {instanceID: 2180}
     - Class: 114
       Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 2908}
-    - Class: 114
       Script: {instanceID: 3284}
-    - Class: 114
-      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 3884}
     - Class: 114
       Script: {instanceID: 3918}
-    - Class: 114
-      Script: {instanceID: 3988}
     - Class: 114
       Script: {instanceID: 4186}
     - Class: 114
@@ -168,11 +153,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1528}
-    - Class: 114
       Script: {instanceID: 1552}
-    - Class: 114
-      Script: {instanceID: 1558}
     - Class: 114
       Script: {instanceID: 1680}
     - Class: 114
@@ -200,15 +181,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2908}
-    - Class: 114
       Script: {instanceID: 2946}
     - Class: 114
       Script: {instanceID: 2976}
     - Class: 114
       Script: {instanceID: 3402}
-    - Class: 114
-      Script: {instanceID: 3580}
     - Class: 114
       Script: {instanceID: 3700}
     - Class: 114
@@ -219,8 +196,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3908}
     - Class: 114
       Script: {instanceID: 3918}
-    - Class: 114
-      Script: {instanceID: 3988}
     - Class: 114
       Script: {instanceID: 4186}
     - Class: 114

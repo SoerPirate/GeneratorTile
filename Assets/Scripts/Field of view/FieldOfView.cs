@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-//using Photon;
-//using Photon.Pun;
+using Photon;
+using Photon.Pun;
 
 public class FieldOfView : MonoBehaviour {
 
@@ -23,16 +23,10 @@ public class FieldOfView : MonoBehaviour {
 
 	public MeshFilter viewMeshFilter;
 	Mesh viewMesh;
-	//PhotonView photonView;
+	PhotonView photonView;
 
 	void Start() 
 	{
-		//targetMask.value = 9;
-		//obstacleMask.value = 8; 
-
-		//targetMask.GetMask("Targets");
-		//obstacleMask.GetMask("Obstacles");
-
 		targetMask = LayerMask.GetMask("Targets");
 		obstacleMask = LayerMask.GetMask("Obstacles");
 
@@ -43,11 +37,12 @@ public class FieldOfView : MonoBehaviour {
 		viewMesh.name = "View Mesh";
 		viewMeshFilter.mesh = viewMesh;
 
-		//photonView = gameObject.GetComponent<PhotonView>();
-		//if (photonView.IsMine)
-		//{
+		photonView = gameObject.GetComponent<PhotonView>();
+		if (!photonView.IsMine)
+		{
+			return;
+		}
 		StartCoroutine ("FindTargetsWithDelay", .2f);
-		//}
 	}
 
 

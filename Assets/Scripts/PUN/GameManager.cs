@@ -62,16 +62,16 @@ namespace Photon.Pun.Demo.PunBasics
                 return;
             }
 
-            if (PlayerManager.LocalPlayerInstance == null)
-            {
-                if (PhotonNetwork.IsMasterClient) // 2
-                {
-                    Debug.Log("Instantiating Player 1");
+            //if (PlayerManager.LocalPlayerInstance == null)
+            //{
+                //if (PhotonNetwork.IsMasterClient) // 2
+                //{
+            Debug.Log("Instantiating Player 1");
                     // 3
-                    var player1 = PhotonNetwork.Instantiate("Player", player1SpawnPosition.transform.position, player1SpawnPosition.transform.rotation, 0);
-                    player1.AddComponent<PlayerTapMove>(); 
-                    player1.AddComponent<FieldOfView>();          
-                    player1.AddComponent<Controller>();   
+            var player1 = PhotonNetwork.Instantiate("Player", player1SpawnPosition.transform.position, player1SpawnPosition.transform.rotation, 0);
+            player1.AddComponent<PlayerTapMove>(); 
+            player1.AddComponent<FieldOfView>();          
+            player1.AddComponent<Controller>();   
 
                     //cinemachineCamera.Follow = player1.transform;
                     //cinemachineCamera.LookAt = player1.transform;
@@ -79,19 +79,19 @@ namespace Photon.Pun.Demo.PunBasics
                     // 4
                     //ball = PhotonNetwork.Instantiate("Ball", ballSpawnTransform.transform.position, ballSpawnTransform.transform.rotation, 0);
                     //ball.name = "Ball";
-                }
-                else // 5
-                {
-                    Debug.Log("Instantiating Player 2");
-                    var player2 = PhotonNetwork.Instantiate("Player", player2SpawnPosition.transform.position, player2SpawnPosition.transform.rotation, 0);
-                    player2.AddComponent<PlayerTapMove>(); 
-                    player2.AddComponent<FieldOfView>();          
-                    player2.AddComponent<Controller>(); 
+                //}
+                //else // 5
+                //{
+                //Debug.Log("Instantiating Player 2");
+                //var player2 = PhotonNetwork.Instantiate("Player", player2SpawnPosition.transform.position, player2SpawnPosition.transform.rotation, 0);
+                //player2.AddComponent<PlayerTapMove>(); 
+                //player2.AddComponent<FieldOfView>();          
+                //player2.AddComponent<Controller>(); 
 
                     //cinemachineCamera.Follow = player2.transform;
                     //cinemachineCamera.LookAt = player2.transform;
-                }
-            }
+                //}
+            //}
         }
 
         // Update Method
