@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Gun : MonoBehaviour {
 
 	public Transform muzzle;
 	public Projectile projectile;
-	public float msBetweenShots = 100;
-	public float muzzleVelocity = 35;
+	public float msBetweenShots = 700; // 100
+	public float muzzleVelocity = 5; // 35
 
 	float nextShotTime;
 

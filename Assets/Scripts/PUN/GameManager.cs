@@ -75,6 +75,9 @@ namespace Photon.Pun.Demo.PunBasics
             player1.AddComponent<FieldOfView>();          
             player1.AddComponent<Controller>();   
 
+            player1.AddComponent<Player>(); 
+            player1.AddComponent<GunController>();  
+
             // GameObject vcgo = new GameObject();
 
             // vcgo.transform.position = new Vector3(0, 25, 0);
