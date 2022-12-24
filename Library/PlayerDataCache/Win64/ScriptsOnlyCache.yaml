@@ -3,10 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - EnemyAI
     - FollowTarget
+    - Gun
     - MapGenerator
     - MouseNavi
     - Photon.Pun.Demo.PunBasics.GameManager
     - Photon.Pun.Demo.PunBasics.Launcher
+    - PrefabScript
+    - Projectile
     - Reporter
     - ReporterMessageReceiver
     PhotonUnityNetworking.Demos.dll:
@@ -84,17 +87,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2958}
     - Class: 114
+      Script: {instanceID: 2982}
+    - Class: 114
       Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 4018}
+      Script: {instanceID: 3458}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4020}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4764}
+      Script: {instanceID: 4346}
+    - Class: 114
+      Script: {instanceID: 4446}
+    - Class: 114
+      Script: {instanceID: 4766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -134,11 +143,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 90
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -181,29 +186,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2968}
     - Class: 114
+      Script: {instanceID: 2982}
+    - Class: 114
       Script: {instanceID: 3028}
     - Class: 114
       Script: {instanceID: 3060}
     - Class: 114
+      Script: {instanceID: 3458}
+    - Class: 114
       Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3830}
     - Class: 114
-      Script: {instanceID: 3832}
+      Script: {instanceID: 3834}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 4004}
     - Class: 114
-      Script: {instanceID: 4042}
+      Script: {instanceID: 4044}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 4446}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4598}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4928}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -677,7 +686,7 @@ ScriptsOnlyBuild:
     className: PhotonHandler
   - hash:
       serializedVersion: 2
-      Hash: f35eef25595c53d9a6be715688116585
+      Hash: 459b50185a167c1d210a783633c72823
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -965,7 +974,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 4044e0e5a9b867b579b89c29babdd799
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Projectile
@@ -1355,6 +1364,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 31d2de8954a819785d7dc10e42404dd6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PrefabScript
+  - hash:
+      serializedVersion: 2
       Hash: ae1347d9113eee8b83c5c8047dcf31a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
@@ -1667,7 +1682,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 33241effba2b999d090b16608449e651
+      Hash: 04918e7c83795f5c8596537242bec947
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GunController
@@ -1879,5 +1894,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Launcher.unity
   - Assets/Scenes/Hunt.unity
-  playerPath: "F:/\u0420\u0430\u0437\u043D\u043E\u0435/\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430/Hunt
-    Build/Generator.exe"
+  playerPath: "F:/\u0420\u0430\u0437\u043D\u043E\u0435/\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430/hunt
+    gun/Generator.exe"
