@@ -71,12 +71,16 @@ namespace Photon.Pun.Demo.PunBasics
             Debug.Log("Instantiating Player 1");
                     // 3
             var player1 = PhotonNetwork.Instantiate("Player", player1SpawnPosition.transform.position, player1SpawnPosition.transform.rotation, 0);
-            player1.AddComponent<PlayerTapMove>(); 
+            //player1.AddComponent<PlayerTapMove>(); 
             player1.AddComponent<FieldOfView>();          
             player1.AddComponent<Controller>();   
 
             player1.AddComponent<Player>(); 
             player1.AddComponent<GunController>();  
+
+            player1.AddComponent<MotionController>();
+
+
 
             // GameObject vcgo = new GameObject();
 

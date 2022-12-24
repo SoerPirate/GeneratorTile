@@ -1890,9 +1890,15 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: c05af19066a068049f7c5ab30e4fe948
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MotionController
   platform: 19
   scenePathNames:
   - Assets/Scenes/Launcher.unity
   - Assets/Scenes/Hunt.unity
   playerPath: "F:/\u0420\u0430\u0437\u043D\u043E\u0435/\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430/hunt
-    gun/Generator.exe"
+    gun turn/Generator.exe"

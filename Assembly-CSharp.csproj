@@ -105,6 +105,7 @@
      <Compile Include="Assets\Cinemachine\Base\Runtime\Core\Predictor.cs" />
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
      <Compile Include="Assets\NULLcode Studio\MouseNavi\Scripts\NaviControl.cs" />
+     <Compile Include="Assets\Scripts\PrefabScript.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Components\CinemachineTrackedDolly.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Components\CinemachineGroupComposer.cs" />
@@ -131,7 +132,7 @@
      <Compile Include="Assets\Cinemachine\Base\Runtime\Core\CameraState.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Core\CinemachineCore.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Core\CinemachineBlend.cs" />
-     <Compile Include="Assets\Scripts\PrefabScript.cs" />
+     <Compile Include="Assets\Scripts\MotionController.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\NULLcode Studio\MouseNavi\NULLcode Studio.txt" />
