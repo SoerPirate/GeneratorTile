@@ -34,7 +34,17 @@ public class GunController : MonoBehaviour {
 
 		equippedGun = Instantiate(prefabGun, weaponHold.position, weaponHold.rotation) as Gun;
 		equippedGun.transform.parent = weaponHold;
-	}
+
+		//equippedGun.transform.Rotate(0.0f, 90.0f, 90.0f);
+		equippedGun.transform.localPosition = new Vector3 (0, 0, 1);
+		equippedGun.transform.localRotation = Quaternion.Euler(0, 90, 90);
+		
+		var ProjectileSpawn = equippedGun.transform.GetChild(0);
+		
+		//ProjectileSpawn.transform.Rotate(270.0f, 0.0f, 90.0f);
+		ProjectileSpawn.transform.localPosition = new Vector3 (0, 1, 0);
+		ProjectileSpawn.transform.localRotation = Quaternion.Euler(270, 0, 90);
+ 	}
 
 
 	public void Shoot() {

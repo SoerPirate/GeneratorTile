@@ -7,17 +7,17 @@ public class Projectile : MonoBehaviour {
 	float speed = 10;
 	//float damage = 1;
 
-	//float lifetime = 3;
+	float lifetime = 3;
 	//float skinWidth = .1f;
 
-	// void Start() {
-	// 	Destroy (gameObject, lifetime);
+	void Start() {
+		Destroy (gameObject, lifetime);
 
-	// 	Collider[] initialCollisions = Physics.OverlapSphere (transform.position, .1f, collisionMask);
-	// 	if (initialCollisions.Length > 0) {
-	// 		OnHitObject(initialCollisions[0]);
-	// 	}
-	// }
+		// Collider[] initialCollisions = Physics.OverlapSphere (transform.position, .1f, collisionMask);
+		// if (initialCollisions.Length > 0) {
+		// 	OnHitObject(initialCollisions[0]);
+		// }
+	}
 
 	public void SetSpeed(float newSpeed) {
 		speed = newSpeed;
